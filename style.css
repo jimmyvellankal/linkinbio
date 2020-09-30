@@ -1,0 +1,104 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+/* color gradient from https://www.w3schools.com/colors/colors_gradient.asp */
+:root {
+	--darkest-color: #000;
+	--lightest-color: #fff;
+	--highlight-color: #ffffff;
+	--bright-color-1: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+	--bright-color-2: linear-gradient(to right, #99ff99 0%, #99ccff 100%);
+	--bright-color-3: linear-gradient(to right, #99ff99 0%, #99ccff 100%);
+}
+
+body {
+	background: var(--darkest-color);
+	color: var(--lightest-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.circle-shape {
+	width: 180px;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	/* border: 3px solid var(--lightest-color); */
+	margin: 0 auto;
+}
+
+.profile-pic {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+}
+
+a {
+	color: var(--lightest-color);
+	text-decoration: none;
+}
+
+.ig-link {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.link-list-item {
+	border: 1px solid var(--highlight-color);
+	box-sizing: border-box;
+	margin: 20px auto;
+	color: var(--darkest-color); 
+	padding: 15px;
+	text-align: center;
+	transition: all 0.15s;
+	border-radius: 2px;
+}
+
+.link-list-item:hover,
+a:hover {
+	color: var(--highlight-color);
+	border-color: var(--highlight-color);
+	text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.icon-list-img {
+	height: 50px;
+	width: 50px;
+	margin: 3px;
+}
+.fa-icon {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    line-height: 29px;
+    font-size: 15px;
+    text-align: center
+}
+
+.fa-icon.fa-icon-2x {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px
+}
+
+.dark {
+	background: var(--bright-color-1);
+}
+
+.medium {
+	background: var(--bright-color-2);
+}
+
+.light {
+	background: var(--bright-color-3);
+}
